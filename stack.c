@@ -18,13 +18,13 @@ void push(void* value)
 }
 void* pop()
 {
-    void* val = head->(void*)data;
+    void* val = head->data;
     head = head->next;
     n--;
     return val;
 }
 int isempty()
-{i
+{
     return head == NULL;
 }
 int size()
